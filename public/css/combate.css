@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Tiro+Gurmukhi&display=swap');
+
+html{
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(#F15412, rgb(213, 122, 51), rgb(233, 168, 17));
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+#seleccionMascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo {
+    color:white;
+    font-size: 40px;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.subtitulo {
+    color:white;
+    font-size: 24px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 7fr  1fr 7fr;
+    justify-items: center; 
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.tarjetas-ataques{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; 
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.tarjeta-de-mokepon{
+    width: 190px;
+    height: 100px;
+    background-color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.tarjeta-de-mokepon img, .icono-de-mokepon img{
+    width: 80px;
+}
+
+
+#boton-mascota {
+    background-color: #34B3F1;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+input:checked + label{
+    width: 190px;
+    height: 120px;
+    border: 3px solid white;
+}
+
+#elegirAtaque{
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.botones-ataques{
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 1px;
+    width: 80px;
+    height: 45px;
+    cursor: pointer;
+    font-family: 'Tiro Gurmukhi', serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#mensajes {
+    font-size: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#boton-reiniciar{
+    background-color: #34B3F1;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-family: 'Tiro Gurmukhi', serif;
+    margin-bottom: 15px;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    gap: 20px;
+}
+
+#vidasJugador, #vidasPc{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ver-mapa button {
+    background-color: #34B3F1;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+#mapa {
+    border: 2px solid white;
+}
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques{
+        grid-template-columns: 1fr;
+    }
+    .titulo {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 300px){
+    #ver-mapa div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
